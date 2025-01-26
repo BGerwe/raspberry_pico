@@ -1,5 +1,4 @@
 # micropython documentation: https://docs.micropython.org/en/v1.23.0/library/machine.html
-# (not imported here) picozero documentation to find the available classes/functions: https://picozero.readthedocs.io/en/latest/
 from machine import Pin
 from utime import sleep
 
@@ -14,15 +13,15 @@ led_blue = Pin(13, Pin.OUT)
 led_red = Pin(14, Pin.OUT)
 led_green = Pin(15, Pin.OUT)
 
-# `while` is control logic that continuously executes the code below it if a condition is true. The general
-# syntax is `while <condition>:`.
+# `while` is control logic that continuously executes the code below it if a condition is true.
+# The general syntax is `while <condition>:`.
 # Here we are explicitly setting that condition to `True` so the code will execute indefinitely.
 while True:
     # Here we access the `on` method of the `Pin` class, to set its value to 1.
     led_green.on()
-    # We want the light to remain on for a certain amount of time. We imported this function `sleep` that
-    # causes code execution to wait a specified amount of time before proceeding. The input of this function is
-    # the number of seconds to wait.
+    # We want the light to remain on for a certain amount of time. We imported this function
+    # `sleep` that causes code execution to wait a specified amount of time before proceeding. The
+    # input of this function is the number of seconds to wait.
     sleep(1)
     # Access the `off` method of `Pin` to set its value to 0.
     led_green.off()
