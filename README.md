@@ -11,6 +11,9 @@ when working on a team.
 Follow [this link](https://git-scm.com/downloads/win) for the git installer. 
 
 ### Install conda
+**NOTE**:  This isn't strictly required for working with the Raspberry Pico, but I highly recommend this for general
+programming in Python.
+
 conda is a distribution platform and dependency manager for Python. When writing Python we take advantage of the
 hardwork from many other open source software developers around the world by downloading and using their packages.
 Instead of having to reinvent the wheel everytime, we can often find a package that already does what we want. When
@@ -45,3 +48,12 @@ The tradeoff extensions must be found and installed to get many language-specifi
 included in purpose built IDEs. That said, extensions are very easy to find and install in VScode.
 
 Follow [this link](https://code.visualstudio.com/download) for the VScode installer.
+
+The CraftingTable tutorial recommends downloading [Thonny](https://thonny.org/), it's a very basic IDE, so it doesn't
+have many of the convenience features included in VSCode; however, if you find VSCode overwhelming to get started in,
+then it's worth going with Thonny so you can spend more time actually coding and less time learning how to use the IDE.
+
+
+### Set up GitHub
+This part is not strictly necessary, either, but it's good practice to get in the habit of creating a new code
+repository (repo) for each project you are working on. 
