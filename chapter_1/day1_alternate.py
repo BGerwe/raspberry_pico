@@ -74,7 +74,7 @@ print("Blink G for 0.5 seconds, R for 1 second, B for 2 seconds")
 for i in range(0, 3):
     # Note that duration 10 is not actually used
     for color, duration in zip(["green", "blue", "red"], [0.5, 1, 2, 10]):
-        led_blink_on_off(LED_PINS[color], duration)
+        led_blink_on_off(LED_PINS[color], duration)  # type: ignore
 
 # Hopefully you can appreciate that the sequences above are a lot more concise and readable with
 # these advanced techniques than if we had continued to used the basics in `day1.py`.
