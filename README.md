@@ -70,11 +70,11 @@ pip install pipkin
 From the pipking docs:
 > The basic structure of the command line is pipkin <target selection> <command> <command arguments>. For example:
 >
-> pipkin --port /dev/ttyACM0 install micropython-logging
-> pipkin --mount G:\lib install adafruit-circuitpython-ssd1306
-> pipkin --mount G:\lib install --compile adafruit-circuitpython-ssd1306
-> pipkin --dir my_project/lib install micropython-logging micropython-oled
-> pipkin --port COM5 uninstall micropython-logging micropython-oled
-> pipkin --port COM5 list --outdated
+> - pipkin --port /dev/ttyACM0 install micropython-logging
+> - pipkin --mount G:\lib install adafruit-circuitpython-ssd1306
+> - pipkin --mount G:\lib install --compile adafruit-circuitpython-ssd1306
+> - pipkin --dir my_project/lib install micropython-logging micropython-oled
+> - pipkin --port COM5 uninstall micropython-logging micropython-oled
+> - pipkin --port COM5 list --outdated
 
 Note that the microcontroller board cannot be connected to another application while interacting with `pipkin`.
