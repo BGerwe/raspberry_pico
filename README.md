@@ -57,3 +57,24 @@ then it's worth going with Thonny so you can spend more time actually coding and
 ### Set up GitHub
 This part is not strictly necessary, either, but it's good practice to get in the habit of creating a new code
 repository (repo) for each project you are working on. 
+
+
+### Installing packages onto Raspberry Pico
+Use the package [`pipkin`](https://github.com/aivarannamaa/pipkin) to manage packages that are loaded onto the microcontroller environment. It is designed similarly
+to `pip` but tailored for micropython. The IDE Thonny uses this under the hood through it's GUI. First install `pipkin`
+onto your development machine
+```
+pip install pipkin
+```
+
+From the pipking docs:
+> The basic structure of the command line is pipkin <target selection> <command> <command arguments>. For example:
+>
+> pipkin --port /dev/ttyACM0 install micropython-logging
+> pipkin --mount G:\lib install adafruit-circuitpython-ssd1306
+> pipkin --mount G:\lib install --compile adafruit-circuitpython-ssd1306
+> pipkin --dir my_project/lib install micropython-logging micropython-oled
+> pipkin --port COM5 uninstall micropython-logging micropython-oled
+> pipkin --port COM5 list --outdated
+
+Note that the microcontroller board cannot be connected to another application while interacting with `pipkin`.
